@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/background"
+    >
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/primo_numero"
+        android:padding="10dp"
+        />
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOperatore1"
+        android:hint="0"
+        android:padding ="10dp"
+        android:background="@color/background_editext"
+        android:inputType="numberDecimal"/>
+
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/secondo_numero"
+        android:padding="10dp"
+        />
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:id="@+id/editTextOperatore2"
+        android:padding ="10dp"
+        android:background="@color/background_editext"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/risultato"
+        android:padding="10dp"
+        />
+
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOperatore3"
+        android:hint="0"
+        android:padding ="10dp"
+        android:background="@color/background_editext"
+        android:inputType="numberDecimal"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+        <Button android:id="@+id/minusButton"
+            android:text="-"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+        </Button>
+        <Button android:text="*" android:id="@+id/multiplyButton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+        <Button android:text="/" android:id="@+id/divideButton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+        </Button>
+    </LinearLayout>
+</LinearLayout>
